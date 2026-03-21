@@ -297,6 +297,7 @@ section + section { margin-top: var(--sp-xl); }
   margin-bottom: .5rem;
 }
 .wf-box--note { border-left: 4px solid var(--color-border); }
+.wf-box--fill { background: var(--color-bg-sub); border-color: transparent; }
 
 /* ============================================================
    10. アコーディオン（Accordion ブロック）
