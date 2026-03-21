@@ -583,6 +583,14 @@ section + section { margin-top: var(--sp-xl); }
 .pd-prev-next__item--next { text-align: right; }
 
 /* 著者情報（この記事を書いた人） */
+.pd-section-title {
+  font-size: .8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--color-text-sub);
+  margin-bottom: var(--sp-sm);
+}
 .pd-author {
   background: var(--color-bg-sub);
   padding: var(--sp-lg);
