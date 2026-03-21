@@ -935,7 +935,228 @@
     </div>
   </section>
 
+  <!-- ================================================
+       16. 画像＋テキスト
+       ================================================ -->
+  <section id="image-text">
+    <h2>16. 画像＋テキスト</h2>
+
+    <p class="demo-label">左：画像 ／ 右：テキスト</p>
+    <div class="demo">
+      <div class="image-text">
+        <svg class="image-text__img" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#e9ecef"/><text x="200" y="158" text-anchor="middle" fill="#adb5bd" font-size="16" font-family="sans-serif">画像 400×300</text></svg>
+        <div class="image-text__body">
+          <h3>サービスのタイトルが入ります</h3>
+          <p>サービス内容の説明テキストが入ります。お客様の課題を解決するために、どのようなアプローチをとるかを簡潔に説明します。2〜4行程度が読みやすい目安です。</p>
+          <br>
+          <a href="#" class="btn btn--outline btn--md">詳しく見る</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="demo-label">左：テキスト ／ 右：画像</p>
+    <div class="demo">
+      <div class="image-text image-text--reverse">
+        <svg class="image-text__img" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#e9ecef"/><text x="200" y="158" text-anchor="middle" fill="#adb5bd" font-size="16" font-family="sans-serif">画像 400×300</text></svg>
+        <div class="image-text__body">
+          <h3>別のサービスタイトルが入ります</h3>
+          <p>交互に配置することでリズムが生まれ、複数のサービスを並べる際に視覚的な変化をつけることができます。</p>
+          <br>
+          <a href="#" class="btn btn--outline btn--md">詳しく見る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       17. セクション見出し
+       ================================================ -->
+  <section id="section-headings">
+    <h2>17. セクション見出し</h2>
+
+    <p class="demo-label">パターン A：中央揃え＋アンダーバー</p>
+    <div class="demo">
+      <div class="sh-a">
+        <h2 class="sh-a__title">サービス紹介</h2>
+        <span class="sh-a__bar"></span>
+        <p class="sh-a__sub">お客様のビジネスを加速させるWebソリューション</p>
+      </div>
+    </div>
+
+    <p class="demo-label">パターン B：左ボーダー</p>
+    <div class="demo">
+      <div class="sh-b">
+        <h2 class="sh-b__title">制作実績</h2>
+        <p class="sh-b__sub">これまでに手がけたWebサイト・グラフィックの一覧です</p>
+      </div>
+    </div>
+
+    <p class="demo-label">パターン C：英語＋日本語 2段組み</p>
+    <div class="demo">
+      <div class="sh-c">
+        <span class="sh-c__en">Works</span>
+        <h2 class="sh-c__jp">制作実績</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       18. ナビゲーション・ヘッダー
+       ================================================ -->
+  <section id="navigation">
+    <h2>18. ナビゲーション・ヘッダー</h2>
+
+    <p class="demo-label">ライトヘッダー（白背景）</p>
+    <div class="demo" style="padding:0;overflow:hidden;">
+      <nav class="site-nav site-nav--light" aria-label="メインナビゲーション">
+        <a href="#" class="site-nav__logo">LOGO</a>
+        <ul class="site-nav__links">
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">サービス</a></li>
+          <li><a href="#">実績</a></li>
+          <li><a href="#">会社情報</a></li>
+          <li><a href="#">ブログ</a></li>
+        </ul>
+        <a href="#" class="btn btn--primary btn--sm site-nav__cta">お問い合わせ</a>
+        <button class="site-nav__hamburger" aria-label="メニューを開く" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+
+    <p class="demo-label">ダークヘッダー（黒背景）</p>
+    <div class="demo" style="padding:0;overflow:hidden;">
+      <nav class="site-nav site-nav--dark" aria-label="メインナビゲーション">
+        <a href="#" class="site-nav__logo">LOGO</a>
+        <ul class="site-nav__links">
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">サービス</a></li>
+          <li><a href="#">実績</a></li>
+          <li><a href="#">会社情報</a></li>
+          <li><a href="#">ブログ</a></li>
+        </ul>
+        <a href="#" class="btn btn--outline btn--sm site-nav__cta" style="border-color:rgba(255,255,255,.5);color:#fff;">お問い合わせ</a>
+        <button class="site-nav__hamburger" aria-label="メニューを開く" aria-expanded="false" style="color:#fff;">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+
+    <p class="demo-label">プライマリカラーヘッダー</p>
+    <div class="demo" style="padding:0;overflow:hidden;">
+      <nav class="site-nav site-nav--primary" aria-label="メインナビゲーション">
+        <a href="#" class="site-nav__logo">LOGO</a>
+        <ul class="site-nav__links">
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">サービス</a></li>
+          <li><a href="#">実績</a></li>
+          <li><a href="#">会社情報</a></li>
+          <li><a href="#">ブログ</a></li>
+        </ul>
+        <a href="#" class="btn btn--sm site-nav__cta" style="background:#fff;color:var(--c-primary);border-color:#fff;">お問い合わせ</a>
+        <button class="site-nav__hamburger" aria-label="メニューを開く" aria-expanded="false" style="color:#fff;">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ================================================
+       19. フッター
+       ================================================ -->
+  <section id="footer">
+    <h2>19. フッター</h2>
+
+    <p class="demo-label">フルフッター（3カラム＋著作権）</p>
+    <div class="demo" style="padding:0;overflow:hidden;">
+      <footer class="site-footer">
+        <div class="site-footer__grid">
+          <div class="site-footer__brand">
+            <a href="#" class="site-footer__logo">LOGO</a>
+            <p class="site-footer__tagline">お客様のビジネスを支えるWebデザインスタジオ。<br>東京を拠点に全国対応しています。</p>
+          </div>
+          <div class="site-footer__col">
+            <h4>サービス</h4>
+            <ul>
+              <li><a href="#">Webデザイン</a></li>
+              <li><a href="#">コーディング</a></li>
+              <li><a href="#">LP制作</a></li>
+              <li><a href="#">WordPress開発</a></li>
+            </ul>
+          </div>
+          <div class="site-footer__col">
+            <h4>会社情報</h4>
+            <ul>
+              <li><a href="#">会社概要</a></li>
+              <li><a href="#">制作実績</a></li>
+              <li><a href="#">採用情報</a></li>
+              <li><a href="#">ブログ</a></li>
+            </ul>
+          </div>
+          <div class="site-footer__col">
+            <h4>サポート</h4>
+            <ul>
+              <li><a href="#">よくある質問</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+              <li><a href="#">利用規約</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <p class="site-footer__copy">© 2024 Sample Design Studio. All rights reserved.</p>
+          <nav class="site-footer__sns" aria-label="SNS">
+            <a href="#">X（旧Twitter）</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <p class="demo-label">シンプルフッター（1行）</p>
+    <div class="demo" style="padding:0;overflow:hidden;">
+      <footer class="site-footer--simple">
+        <small>© 2024 Sample Design Studio.</small>
+        <nav>
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">利用規約</a>
+          <a href="#">お問い合わせ</a>
+        </nav>
+      </footer>
+    </div>
+  </section>
+
 </main>
+
+<script>
+// Accordion
+document.querySelectorAll('.accordion__trigger').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    const panel = document.getElementById(btn.getAttribute('aria-controls'));
+    if (panel) panel.hidden = expanded;
+  });
+});
+
+// Tabs
+document.querySelectorAll('[data-tabs]').forEach(tabs => {
+  const btns = tabs.querySelectorAll('.tabs__btn');
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => {
+        b.setAttribute('aria-selected', 'false');
+        const p = document.getElementById(b.getAttribute('aria-controls'));
+        if (p) p.hidden = true;
+      });
+      btn.setAttribute('aria-selected', 'true');
+      const panel = document.getElementById(btn.getAttribute('aria-controls'));
+      if (panel) panel.hidden = false;
+    });
+  });
+});
+</script>
 
 </body>
 </html>
