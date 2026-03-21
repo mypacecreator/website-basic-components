@@ -73,12 +73,14 @@ img { max-width: 100%; height: auto; display: block; }
   position: sticky;
   top: 0;
   z-index: 100;
+  overflow-x: auto;
 }
 .t-nav ol {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 2px;
   list-style: none;
+  white-space: nowrap;
 }
 .t-nav a {
   display: block;
