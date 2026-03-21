@@ -8,7 +8,7 @@
 /* ── CSS カスタムプロパティ ── */
 :root {
   /* カラー ★ */
-  --color-primary:      #888888;   /* ★ ブランドカラー（メイン） */
+  --color-primary:      #666666;   /* ★ ブランドカラー（メイン） */
   --color-primary-text: #ffffff;   /* ★ ブランドカラー上のテキスト色 */
   --color-text:         #111111;
   --color-text-sub:     #666666;
@@ -35,7 +35,7 @@
 
   /* ── ワイヤーフレーム専用（デザイン制作後に不要） ── */
   --wf-ph-bg:   #d8d8d8;   /* 画像プレースホルダー背景 */
-  --wf-ph-text: #aaaaaa;   /* 画像プレースホルダーテキスト */
+  --wf-ph-text: #555555;   /* 画像プレースホルダーテキスト */
 }
 
 /* ── リセット ── */
@@ -46,7 +46,7 @@ body {
   font-size: 1rem;
   line-height: var(--leading-base);
   color: var(--color-text);
-  background: #ebebeb;
+  background: #ffffff;
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -65,29 +65,22 @@ img { max-width: 100%; height: auto; display: block; }
 .t-header h1 { font-size: 1rem; font-weight: 700; }
 .t-header p  { font-size: .8125rem; color: #888; }
 
-.t-wrap { display: flex; min-height: 100vh; }
-
 .t-nav {
-  width: 200px;
-  flex-shrink: 0;
   background: #fff;
-  border-right: 1px solid #ddd;
-  padding: var(--sp-md) var(--sp-sm);
+  border-bottom: 1px solid #ddd;
+  padding: var(--sp-xs) var(--sp-lg);
   position: sticky;
   top: 0;
-  height: 100vh;
-  overflow-y: auto;
+  z-index: 100;
+  overflow-x: auto;
 }
-.t-nav__label {
-  font-size: .6875rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  color: #aaa;
-  margin-bottom: .5rem;
+.t-nav ol {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2px;
+  list-style: none;
+  white-space: nowrap;
 }
-.t-nav ol { list-style: none; }
-.t-nav li + li { margin-top: 2px; }
 .t-nav a {
   display: block;
   font-size: .8125rem;
@@ -98,7 +91,9 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .t-nav a:hover { background: #f0f0f0; }
 
-.t-main { flex: 1; padding: var(--sp-lg); max-width: 920px; }
+.t-wrap { }
+
+.t-main { padding: var(--sp-lg); max-width: 920px; margin: 0 auto; }
 
 /* セクション */
 section + section { margin-top: var(--sp-xl); }
@@ -108,7 +103,7 @@ section + section { margin-top: var(--sp-xl); }
   font-weight: 700;
   letter-spacing: .06em;
   text-transform: uppercase;
-  color: #999;
+  color: #666;
   padding-bottom: .5rem;
   border-bottom: 1px solid #ddd;
   margin-bottom: var(--sp-md);
@@ -116,7 +111,7 @@ section + section { margin-top: var(--sp-xl); }
 
 .demo-label {
   font-size: .75rem;
-  color: #888;
+  color: #555;
   font-weight: 600;
   margin-top: var(--sp-md);
   margin-bottom: .375rem;
@@ -167,6 +162,10 @@ section + section { margin-top: var(--sp-xl); }
 }
 .wf-ul li + li,
 .wf-ol li + li { margin-top: .25rem; }
+
+.wf-dl dt { font-weight: 700; margin-top: var(--sp-sm); }
+.wf-dl dt:first-child { margin-top: 0; }
+.wf-dl dd { padding-left: 1.5rem; margin-top: .25rem; }
 
 /* ============================================================
    04. 引用（Quote ブロック）
@@ -229,25 +228,7 @@ section + section { margin-top: var(--sp-xl); }
 .wf-table--vertical th { width: 30%; background: var(--color-bg-sub); font-weight: 700; }
 
 /* ============================================================
-   07. 画像（Image ブロック）
-   ============================================================ */
-.wf-figure { }
-.wf-figure figcaption {
-  font-size: .875rem;
-  color: var(--color-text-sub);
-  margin-top: .5rem;
-}
-
-/* ============================================================
-   08. ギャラリー（Gallery ブロック）
-   ============================================================ */
-.wf-gallery { display: grid; gap: var(--sp-sm); }
-.wf-gallery--2 { grid-template-columns: repeat(2, 1fr); }
-.wf-gallery--3 { grid-template-columns: repeat(3, 1fr); }
-.wf-gallery--4 { grid-template-columns: repeat(4, 1fr); }
-
-/* ============================================================
-   09. カバー（Cover ブロック）
+   07. カバー（Cover ブロック）
    ============================================================ */
 .wf-cover {
   position: relative;
@@ -258,7 +239,7 @@ section + section { margin-top: var(--sp-xl); }
   justify-content: center;
   text-align: center;
   padding: var(--sp-lg);
-  background: var(--wf-ph-bg);
+  background: #777777;
   color: #fff;
 }
 .wf-cover__inner { max-width: 640px; }
@@ -271,7 +252,7 @@ section + section { margin-top: var(--sp-xl); }
 .wf-cover__sub { margin-top: var(--sp-sm); }
 
 /* ============================================================
-   10. メディアとテキスト（Media & Text ブロック）
+   08. メディアとテキスト（Media & Text ブロック）
    ============================================================ */
 .wf-media-text {
   display: grid;
@@ -284,22 +265,7 @@ section + section { margin-top: var(--sp-xl); }
 .wf-media-text__body > * + * { margin-top: var(--sp-sm); }
 
 /* ============================================================
-   11. カラムレイアウト（Columns ブロック）
-   ============================================================ */
-.wf-columns { display: grid; gap: var(--sp-md); }
-.wf-columns--2   { grid-template-columns: repeat(2, 1fr); }
-.wf-columns--3   { grid-template-columns: repeat(3, 1fr); }
-.wf-columns--1-2 { grid-template-columns: 1fr 2fr; }
-
-.wf-col {
-  background: var(--color-bg-sub);
-  border: 1px dashed var(--color-border);
-  padding: var(--sp-md);
-  min-height: 120px;
-}
-
-/* ============================================================
-   12. 囲みテキスト（強調ボックス）
+   09. 囲みテキスト（強調ボックス）
    ============================================================ */
 .wf-box {
   border: 1px solid var(--color-border);
@@ -313,7 +279,7 @@ section + section { margin-top: var(--sp-xl); }
 .wf-box--note { border-left: 4px solid var(--color-border); }
 
 /* ============================================================
-   13. アコーディオン（Accordion ブロック）
+   10. アコーディオン（Accordion ブロック）
    ============================================================ */
 .wf-accordion-wrap { border-top: 1px solid var(--color-border); }
 .wf-accordion {
@@ -334,7 +300,7 @@ section + section { margin-top: var(--sp-xl); }
 .wf-accordion__body { padding: 0 0 var(--sp-sm); }
 
 /* ============================================================
-   14. FAQ
+   11. FAQ
    ============================================================ */
 .wf-faq { }
 .wf-faq__item {
@@ -362,7 +328,7 @@ section + section { margin-top: var(--sp-xl); }
 }
 
 /* ============================================================
-   15. お知らせ一覧（Latest Posts ブロック）
+   12. お知らせ一覧（Latest Posts ブロック）
    ============================================================ */
 
 /* カード型 */
@@ -391,7 +357,7 @@ section + section { margin-top: var(--sp-xl); }
 .wf-post-item__title a:hover { text-decoration: underline; }
 
 /* ============================================================
-   16. パンくず
+   13. パンくず
    ============================================================ */
 .wf-breadcrumb {
   display: flex;
@@ -411,7 +377,7 @@ section + section { margin-top: var(--sp-xl); }
 .wf-breadcrumb__item[aria-current="page"] { color: var(--color-text-sub); }
 
 /* ============================================================
-   17. ページネーション
+   14. ページネーション
    ============================================================ */
 .wf-pagination { display: flex; flex-wrap: wrap; gap: .25rem; list-style: none; }
 .wf-pagination__item a,
@@ -433,3 +399,19 @@ section + section { margin-top: var(--sp-xl); }
   border-color: var(--color-primary);
 }
 .wf-pagination__item--disabled span { color: var(--color-text-sub); }
+
+/* ============================================================
+   レスポンシブ（モバイル対応）
+   ============================================================ */
+@media (max-width: 640px) {
+  .t-nav { padding: var(--sp-xs) var(--sp-sm); }
+  .t-main { padding: var(--sp-md); }
+
+  .wf-media-text {
+    grid-template-columns: 1fr;
+  }
+  .wf-media-text--reverse .wf-media-text__media { order: unset; }
+  .wf-media-text--reverse .wf-media-text__body  { order: unset; }
+
+  .wf-posts-grid { grid-template-columns: 1fr; }
+}

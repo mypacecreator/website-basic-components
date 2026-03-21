@@ -13,30 +13,26 @@
   <p>コンポーネントテンプレート — WordPress コアブロック準拠 / デザイン発注用</p>
 </header>
 
-<div class="t-wrap">
+<nav class="t-nav" aria-label="目次">
+  <ol>
+    <li><a href="#heading">01. 見出し</a></li>
+    <li><a href="#paragraph">02. 段落・テキスト</a></li>
+    <li><a href="#list">03. リスト</a></li>
+    <li><a href="#quote">04. 引用</a></li>
+    <li><a href="#buttons">05. ボタン</a></li>
+    <li><a href="#table">06. テーブル</a></li>
+    <li><a href="#cover">07. カバー</a></li>
+    <li><a href="#media-text">08. メディアとテキスト</a></li>
+    <li><a href="#box">09. 囲みテキスト</a></li>
+    <li><a href="#accordion">10. アコーディオン</a></li>
+    <li><a href="#faq">11. FAQ</a></li>
+    <li><a href="#posts">12. お知らせ一覧</a></li>
+    <li><a href="#breadcrumb">13. パンくず</a></li>
+    <li><a href="#pagination">14. ページネーション</a></li>
+  </ol>
+</nav>
 
-  <nav class="t-nav" aria-label="目次">
-    <p class="t-nav__label">コンポーネント</p>
-    <ol>
-      <li><a href="#heading">01. 見出し</a></li>
-      <li><a href="#paragraph">02. 段落・テキスト</a></li>
-      <li><a href="#list">03. リスト</a></li>
-      <li><a href="#quote">04. 引用</a></li>
-      <li><a href="#buttons">05. ボタン</a></li>
-      <li><a href="#table">06. テーブル</a></li>
-      <li><a href="#image">07. 画像</a></li>
-      <li><a href="#gallery">08. ギャラリー</a></li>
-      <li><a href="#cover">09. カバー</a></li>
-      <li><a href="#media-text">10. メディアとテキスト</a></li>
-      <li><a href="#columns">11. カラムレイアウト</a></li>
-      <li><a href="#box">12. 囲みテキスト</a></li>
-      <li><a href="#accordion">13. アコーディオン</a></li>
-      <li><a href="#faq">14. FAQ</a></li>
-      <li><a href="#posts">15. お知らせ一覧</a></li>
-      <li><a href="#breadcrumb">16. パンくず</a></li>
-      <li><a href="#pagination">17. ページネーション</a></li>
-    </ol>
-  </nav>
+<div class="t-wrap">
 
   <main class="t-main">
 
@@ -107,6 +103,18 @@
           <li>手順や順序のある項目のテキストが入ります</li>
           <li>手順や順序のある項目のテキストが入ります</li>
         </ol>
+      </div>
+
+      <p class="demo-label">定義リスト（definition list）— 用語集・FAQ・仕様表などに</p>
+      <div class="demo">
+        <dl class="wf-dl">
+          <dt>定義語（Term）</dt>
+          <dd>定義の説明テキストが入ります。用語の意味・解説などを記述します。</dd>
+          <dt>定義語（Term）</dt>
+          <dd>定義の説明テキストが入ります。</dd>
+          <dt>定義語（Term）</dt>
+          <dd>定義の説明テキストが入ります。</dd>
+        </dl>
       </div>
     </section>
 
@@ -227,73 +235,10 @@
     </section>
 
     <!-- ================================================
-         07. 画像（Image ブロック）
-         ================================================ -->
-    <section id="image">
-      <p class="s-heading">07. 画像 — Image</p>
-
-      <p class="demo-label">キャプションなし</p>
-      <div class="demo">
-        <div class="ph" style="height:200px;">画像エリア（横幅 100%）</div>
-      </div>
-
-      <p class="demo-label">キャプション付き</p>
-      <div class="demo">
-        <figure class="wf-figure">
-          <div class="ph" style="height:200px;">画像エリア（横幅 100%）</div>
-          <figcaption>画像のキャプションテキストが入ります。写真の説明や出典などを記載します。</figcaption>
-        </figure>
-      </div>
-
-      <p class="demo-label">サイズ指定のバリエーション</p>
-      <div class="demo">
-        <div class="ph" style="height:140px; max-width:320px;">small（最大幅 320px）</div>
-        <br>
-        <div class="ph" style="height:140px; max-width:480px;">medium（最大幅 480px）</div>
-        <br>
-        <div class="ph" style="height:140px;">large / full（横幅 100%）</div>
-      </div>
-    </section>
-
-    <!-- ================================================
-         08. ギャラリー（Gallery ブロック）
-         ================================================ -->
-    <section id="gallery">
-      <p class="s-heading">08. ギャラリー — Gallery</p>
-
-      <p class="demo-label">2カラム</p>
-      <div class="demo">
-        <div class="wf-gallery wf-gallery--2">
-          <div class="ph" style="height:160px;">画像</div>
-          <div class="ph" style="height:160px;">画像</div>
-        </div>
-      </div>
-
-      <p class="demo-label">3カラム</p>
-      <div class="demo">
-        <div class="wf-gallery wf-gallery--3">
-          <div class="ph" style="height:140px;">画像</div>
-          <div class="ph" style="height:140px;">画像</div>
-          <div class="ph" style="height:140px;">画像</div>
-        </div>
-      </div>
-
-      <p class="demo-label">4カラム</p>
-      <div class="demo">
-        <div class="wf-gallery wf-gallery--4">
-          <div class="ph" style="height:120px;">画像</div>
-          <div class="ph" style="height:120px;">画像</div>
-          <div class="ph" style="height:120px;">画像</div>
-          <div class="ph" style="height:120px;">画像</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================================================
-         09. カバー（Cover ブロック）
+         07. カバー（Cover ブロック）
          ================================================ -->
     <section id="cover">
-      <p class="s-heading">09. カバー — Cover</p>
+      <p class="s-heading">07. カバー — Cover</p>
 
       <p class="demo-label">背景画像またはカラー＋テキストオーバーレイ</p>
       <div class="demo" style="padding:0; overflow:hidden;">
@@ -308,10 +253,10 @@
     </section>
 
     <!-- ================================================
-         10. メディアとテキスト（Media & Text ブロック）
+         08. メディアとテキスト（Media & Text ブロック）
          ================================================ -->
     <section id="media-text">
-      <p class="s-heading">10. メディアとテキスト — Media &amp; Text</p>
+      <p class="s-heading">08. メディアとテキスト — Media &amp; Text</p>
 
       <p class="demo-label">左：画像 ／ 右：テキスト</p>
       <div class="demo">
@@ -343,42 +288,10 @@
     </section>
 
     <!-- ================================================
-         11. カラムレイアウト（Columns ブロック）
-         ================================================ -->
-    <section id="columns">
-      <p class="s-heading">11. カラムレイアウト — Columns</p>
-
-      <p class="demo-label">2カラム（均等）</p>
-      <div class="demo">
-        <div class="wf-columns wf-columns--2">
-          <div class="wf-col">コンテンツ A</div>
-          <div class="wf-col">コンテンツ B</div>
-        </div>
-      </div>
-
-      <p class="demo-label">3カラム（均等）</p>
-      <div class="demo">
-        <div class="wf-columns wf-columns--3">
-          <div class="wf-col">コンテンツ A</div>
-          <div class="wf-col">コンテンツ B</div>
-          <div class="wf-col">コンテンツ C</div>
-        </div>
-      </div>
-
-      <p class="demo-label">1:2 比率（狭いカラム＋広いカラム）</p>
-      <div class="demo">
-        <div class="wf-columns wf-columns--1-2">
-          <div class="wf-col">ナロー</div>
-          <div class="wf-col">ワイド</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================================================
-         12. 囲みテキスト（強調ボックス）
+         09. 囲みテキスト（強調ボックス）
          ================================================ -->
     <section id="box">
-      <p class="s-heading">12. 囲みテキスト（強調ボックス）</p>
+      <p class="s-heading">09. 囲みテキスト（強調ボックス）</p>
 
       <p class="demo-label">枠線ボックス — お知らせ・注意事項・補足などに</p>
       <div class="demo">
@@ -398,10 +311,10 @@
     </section>
 
     <!-- ================================================
-         13. アコーディオン（Accordion ブロック）
+         10. アコーディオン（Accordion ブロック）
          ================================================ -->
     <section id="accordion">
-      <p class="s-heading">13. アコーディオン — Accordion</p>
+      <p class="s-heading">10. アコーディオン — Accordion</p>
 
       <p class="demo-label">クリックで開閉（&lt;details&gt; / &lt;summary&gt;）— トグルアイコンのデザインはデザイナーが設定</p>
       <div class="demo">
@@ -429,10 +342,10 @@
     </section>
 
     <!-- ================================================
-         14. FAQ
+         11. FAQ
          ================================================ -->
     <section id="faq">
-      <p class="s-heading">14. FAQ</p>
+      <p class="s-heading">11. FAQ</p>
 
       <p class="demo-label">Q&amp;A 形式 — Q・A マーカーの色・フォント・スタイルはデザイナーが設定</p>
       <div class="demo">
@@ -472,10 +385,10 @@
     </section>
 
     <!-- ================================================
-         15. お知らせ一覧（Latest Posts ブロック）
+         12. お知らせ一覧（Latest Posts ブロック）
          ================================================ -->
     <section id="posts">
-      <p class="s-heading">15. お知らせ一覧 — Latest Posts</p>
+      <p class="s-heading">12. お知らせ一覧 — Latest Posts</p>
 
       <p class="demo-label">カード型（3カラムグリッド）</p>
       <div class="demo">
@@ -559,10 +472,10 @@
     </section>
 
     <!-- ================================================
-         16. パンくず
+         13. パンくず
          ================================================ -->
     <section id="breadcrumb">
-      <p class="s-heading">16. パンくず — Breadcrumb</p>
+      <p class="s-heading">13. パンくず — Breadcrumb</p>
 
       <p class="demo-label">3階層の例</p>
       <div class="demo">
@@ -589,10 +502,10 @@
     </section>
 
     <!-- ================================================
-         17. ページネーション
+         14. ページネーション
          ================================================ -->
     <section id="pagination">
-      <p class="s-heading">17. ページネーション — Pagination</p>
+      <p class="s-heading">14. ページネーション — Pagination</p>
 
       <p class="demo-label">番号付きページネーション</p>
       <div class="demo">
