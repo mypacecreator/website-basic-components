@@ -26,9 +26,11 @@
     <li><a href="#box">09. 囲みテキスト</a></li>
     <li><a href="#accordion">10. アコーディオン</a></li>
     <li><a href="#faq">11. FAQ</a></li>
-    <li><a href="#posts">12. お知らせ一覧</a></li>
-    <li><a href="#breadcrumb">13. パンくず</a></li>
-    <li><a href="#pagination">14. ページネーション</a></li>
+    <li><a href="#card-layout">12. カード型レイアウト</a></li>
+    <li><a href="#news-list">13. お知らせリスト</a></li>
+    <li><a href="#cta">14. CTA</a></li>
+    <li><a href="#breadcrumb">15. パンくず</a></li>
+    <li><a href="#pagination">16. ページネーション</a></li>
   </ol>
 </nav>
 
@@ -105,7 +107,7 @@
         </ol>
       </div>
 
-      <p class="demo-label">定義リスト（definition list）— 用語集・FAQ・仕様表などに</p>
+      <p class="demo-label">定義リスト（definition list）— インデント版 — 用語集・FAQ・仕様表などに</p>
       <div class="demo">
         <dl class="wf-dl">
           <dt>定義語（Term）</dt>
@@ -114,6 +116,36 @@
           <dd>定義の説明テキストが入ります。</dd>
           <dt>定義語（Term）</dt>
           <dd>定義の説明テキストが入ります。</dd>
+        </dl>
+      </div>
+
+      <p class="demo-label">定義リスト（definition list）— 横並び版 — dt と dd を同じ行に並べるパターン</p>
+      <div class="demo">
+        <dl class="wf-dl wf-dl--inline">
+          <dt>定義語（Term）</dt>
+          <dd>定義の説明テキストが入ります。用語の意味・解説などを記述します。</dd>
+          <dt>定義語（Term）</dt>
+          <dd>定義の説明テキストが入ります。</dd>
+          <dt>定義語（Term）</dt>
+          <dd>定義の説明テキストが入ります。</dd>
+        </dl>
+      </div>
+
+      <p class="demo-label">定義リスト — 会社概要（横並び版で実装するパターン）</p>
+      <div class="demo">
+        <dl class="wf-dl wf-dl--inline">
+          <dt>会社名</dt>
+          <dd>株式会社サンプルカンパニー</dd>
+          <dt>設立</dt>
+          <dd>2010年4月1日</dd>
+          <dt>所在地</dt>
+          <dd>東京都渋谷区〇〇町1-2-3 ××ビル5F</dd>
+          <dt>代表者</dt>
+          <dd>代表取締役社長 山田 太郎</dd>
+          <dt>事業内容</dt>
+          <dd>Webサイト制作・システム開発・デジタルマーケティング支援</dd>
+          <dt>従業員数</dt>
+          <dd>50名（2024年4月現在）</dd>
         </dl>
       </div>
     </section>
@@ -227,6 +259,40 @@
               <tr>
                 <th>見出しセル</th>
                 <td>データセルのテキストが入ります</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <p class="demo-label">縦型テーブル — 会社概要（テーブルで実装するパターン）</p>
+      <div class="demo">
+        <div class="table-scroll">
+          <table class="wf-table wf-table--vertical">
+            <tbody>
+              <tr>
+                <th>会社名</th>
+                <td>株式会社サンプルカンパニー</td>
+              </tr>
+              <tr>
+                <th>設立</th>
+                <td>2010年4月1日</td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td>東京都渋谷区〇〇町1-2-3 ××ビル5F</td>
+              </tr>
+              <tr>
+                <th>代表者</th>
+                <td>代表取締役社長 山田 太郎</td>
+              </tr>
+              <tr>
+                <th>事業内容</th>
+                <td>Webサイト制作・システム開発・デジタルマーケティング支援</td>
+              </tr>
+              <tr>
+                <th>従業員数</th>
+                <td>50名（2024年4月現在）</td>
               </tr>
             </tbody>
           </table>
@@ -385,51 +451,54 @@
     </section>
 
     <!-- ================================================
-         12. お知らせ一覧（Latest Posts ブロック）
+         12. カード型レイアウト
          ================================================ -->
-    <section id="posts">
-      <p class="s-heading">12. お知らせ一覧 — Latest Posts</p>
-
-      <p class="demo-label">カード型（3カラムグリッド）</p>
+    <section id="card-layout">
+      <p class="s-heading">12. カード型レイアウト — Card Layout</p>
+      <p class="demo-label">3カラムグリッド — 商品案内・下層ページ紹介などに。モバイルは1カラム縦積み</p>
       <div class="demo">
         <div class="wf-posts-grid">
           <div class="wf-card">
-            <div class="ph" style="height:140px;">サムネイル画像</div>
+            <div class="ph" style="height:160px;">サムネイル画像</div>
             <div class="wf-card__body">
-              <div class="wf-card__meta">
-                <span>2024.04.01</span>
-                <span class="wf-card__cat">カテゴリー</span>
+              <p class="wf-card__title">コンテンツタイトルのテキストが入ります</p>
+              <p class="wf-card__excerpt">コンテンツの説明テキストが入ります。2〜3行程度が目安です。</p>
+              <div class="wf-card__footer">
+                <a href="#" class="wf-btn wf-btn--outline wf-btn--sm">詳しく見る</a>
               </div>
-              <p class="wf-card__title">記事タイトルのテキストが入ります</p>
-              <p class="wf-card__excerpt">記事の抜粋テキストが入ります。2〜3行程度が目安です。</p>
             </div>
           </div>
           <div class="wf-card">
-            <div class="ph" style="height:140px;">サムネイル画像</div>
+            <div class="ph" style="height:160px;">サムネイル画像</div>
             <div class="wf-card__body">
-              <div class="wf-card__meta">
-                <span>2024.03.15</span>
-                <span class="wf-card__cat">カテゴリー</span>
+              <p class="wf-card__title">コンテンツタイトルのテキストが入ります</p>
+              <p class="wf-card__excerpt">コンテンツの説明テキストが入ります。2〜3行程度が目安です。</p>
+              <div class="wf-card__footer">
+                <a href="#" class="wf-btn wf-btn--outline wf-btn--sm">詳しく見る</a>
               </div>
-              <p class="wf-card__title">記事タイトルのテキストが入ります</p>
-              <p class="wf-card__excerpt">記事の抜粋テキストが入ります。2〜3行程度が目安です。</p>
             </div>
           </div>
           <div class="wf-card">
-            <div class="ph" style="height:140px;">サムネイル画像</div>
+            <div class="ph" style="height:160px;">サムネイル画像</div>
             <div class="wf-card__body">
-              <div class="wf-card__meta">
-                <span>2024.03.01</span>
-                <span class="wf-card__cat">カテゴリー</span>
+              <p class="wf-card__title">コンテンツタイトルのテキストが入ります</p>
+              <p class="wf-card__excerpt">コンテンツの説明テキストが入ります。2〜3行程度が目安です。</p>
+              <div class="wf-card__footer">
+                <a href="#" class="wf-btn wf-btn--outline wf-btn--sm">詳しく見る</a>
               </div>
-              <p class="wf-card__title">記事タイトルのテキストが入ります</p>
-              <p class="wf-card__excerpt">記事の抜粋テキストが入ります。2〜3行程度が目安です。</p>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <p class="demo-label">リスト型（日付・カテゴリー・タイトル）</p>
+    <!-- ================================================
+         13. お知らせリスト
+         ================================================ -->
+    <section id="news-list">
+      <p class="s-heading">13. お知らせリスト — News List</p>
+
+      <p class="demo-label">リスト型（日付・カテゴリー・タイトル）— モバイルで縦積みに対応</p>
       <div class="demo">
         <ul class="wf-posts-list" style="list-style:none;">
           <li class="wf-post-item">
@@ -472,10 +541,27 @@
     </section>
 
     <!-- ================================================
-         13. パンくず
+         14. CTA（Call to Action）
+         ================================================ -->
+    <section id="cta">
+      <p class="s-heading">14. CTA — Call to Action</p>
+
+      <p class="demo-label">お問い合わせ・行動喚起エリア — 背景色・レイアウトはデザイナーが設定</p>
+      <div class="demo" style="padding:0; overflow:hidden;">
+        <div class="wf-cta">
+          <p class="wf-h2">お問い合わせはこちら</p>
+          <p class="wf-p">どんなことでもお気軽にお問い合わせください。</p>
+          <p class="wf-cta__microcopy">見積・相談無料</p>
+          <a href="#" class="wf-btn wf-btn--fill">問い合わせる</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         15. パンくず
          ================================================ -->
     <section id="breadcrumb">
-      <p class="s-heading">13. パンくず — Breadcrumb</p>
+      <p class="s-heading">15. パンくず — Breadcrumb</p>
 
       <p class="demo-label">3階層の例</p>
       <div class="demo">
@@ -502,10 +588,10 @@
     </section>
 
     <!-- ================================================
-         14. ページネーション
+         16. ページネーション
          ================================================ -->
     <section id="pagination">
-      <p class="s-heading">14. ページネーション — Pagination</p>
+      <p class="s-heading">16. ページネーション — Pagination</p>
 
       <p class="demo-label">番号付きページネーション</p>
       <div class="demo">

@@ -61,6 +61,7 @@ img { max-width: 100%; height: auto; display: block; }
   display: flex;
   align-items: baseline;
   gap: var(--sp-md);
+  flex-wrap: wrap;
 }
 .t-header h1 { font-size: 1rem; font-weight: 700; }
 .t-header p  { font-size: .8125rem; color: #888; }
@@ -72,14 +73,12 @@ img { max-width: 100%; height: auto; display: block; }
   position: sticky;
   top: 0;
   z-index: 100;
-  overflow-x: auto;
 }
 .t-nav ol {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 2px;
   list-style: none;
-  white-space: nowrap;
 }
 .t-nav a {
   display: block;
@@ -88,6 +87,7 @@ img { max-width: 100%; height: auto; display: block; }
   text-decoration: none;
   padding: .25rem .5rem;
   border-radius: 3px;
+  white-space: nowrap;
 }
 .t-nav a:hover { background: #f0f0f0; }
 
@@ -119,10 +119,7 @@ section + section { margin-top: var(--sp-xl); }
 .demo-label:first-of-type { margin-top: 0; }
 
 .demo {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: var(--sp-md);
+  padding: var(--sp-md) 0;
 }
 .demo > * + * { margin-top: var(--sp-md); }
 
@@ -163,9 +160,20 @@ section + section { margin-top: var(--sp-xl); }
 .wf-ul li + li,
 .wf-ol li + li { margin-top: .25rem; }
 
+/* 定義リスト — インデント版（デフォルト） */
 .wf-dl dt { font-weight: 700; margin-top: var(--sp-sm); }
 .wf-dl dt:first-child { margin-top: 0; }
 .wf-dl dd { padding-left: 1.5rem; margin-top: .25rem; }
+
+/* 定義リスト — 横並び版 */
+.wf-dl--inline {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .5rem var(--sp-md);
+  align-items: baseline;
+}
+.wf-dl--inline dt { margin-top: 0; }
+.wf-dl--inline dd { padding-left: 0; margin-top: 0; }
 
 /* ============================================================
    04. 引用（Quote ブロック）
@@ -328,19 +336,29 @@ section + section { margin-top: var(--sp-xl); }
 }
 
 /* ============================================================
-   12. お知らせ一覧（Latest Posts ブロック）
+   12. カード型レイアウト
    ============================================================ */
-
-/* カード型 */
 .wf-posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-md); }
-.wf-card { border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden; }
-.wf-card__body { padding: var(--sp-sm); }
-.wf-card__meta { display: flex; align-items: center; gap: .5rem; font-size: .8125rem; color: var(--color-text-sub); margin-bottom: .5rem; }
-.wf-card__cat { border: 1px solid var(--color-border); padding: .125rem .5rem; font-size: .75rem; }
+.wf-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.wf-card__body {
+  padding: var(--sp-sm);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 .wf-card__title { font-weight: 700; font-size: .9375rem; }
-.wf-card__excerpt { font-size: .875rem; color: var(--color-text-sub); margin-top: .375rem; }
+.wf-card__excerpt { font-size: .875rem; color: var(--color-text-sub); margin-top: .375rem; flex: 1; }
+.wf-card__footer { margin-top: var(--sp-sm); }
 
-/* リスト型 */
+/* ============================================================
+   13. お知らせリスト
+   ============================================================ */
 .wf-posts-list { }
 .wf-post-item {
   display: flex;
@@ -350,14 +368,39 @@ section + section { margin-top: var(--sp-xl); }
   border-bottom: 1px solid var(--color-border);
 }
 .wf-post-item:first-child { border-top: 1px solid var(--color-border); }
-.wf-post-item__meta { flex-shrink: 0; font-size: .8125rem; color: var(--color-text-sub); }
+.wf-post-item__meta {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .8125rem;
+  color: var(--color-text-sub);
+}
 .wf-post-item__cat { border: 1px solid var(--color-border); padding: .125rem .5rem; font-size: .75rem; }
 .wf-post-item__title { font-weight: 600; }
 .wf-post-item__title a { text-decoration: none; }
 .wf-post-item__title a:hover { text-decoration: underline; }
 
 /* ============================================================
-   13. パンくず
+   14. CTA（Call to Action）
+   ============================================================ */
+.wf-cta {
+  background: var(--color-bg-sub);
+  padding: var(--sp-xl) var(--sp-lg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-sm);
+}
+.wf-cta__microcopy {
+  font-size: .875rem;
+  color: var(--color-text-sub);
+  margin-top: -.25rem;
+}
+
+/* ============================================================
+   15. パンくず
    ============================================================ */
 .wf-breadcrumb {
   display: flex;
@@ -377,7 +420,7 @@ section + section { margin-top: var(--sp-xl); }
 .wf-breadcrumb__item[aria-current="page"] { color: var(--color-text-sub); }
 
 /* ============================================================
-   14. ページネーション
+   16. ページネーション
    ============================================================ */
 .wf-pagination { display: flex; flex-wrap: wrap; gap: .25rem; list-style: none; }
 .wf-pagination__item a,
@@ -414,4 +457,12 @@ section + section { margin-top: var(--sp-xl); }
   .wf-media-text--reverse .wf-media-text__body  { order: unset; }
 
   .wf-posts-grid { grid-template-columns: 1fr; }
+
+  .wf-post-item {
+    flex-direction: column;
+    gap: .25rem;
+    align-items: flex-start;
+  }
+
+  .wf-cta { padding: var(--sp-lg) var(--sp-md); }
 }
