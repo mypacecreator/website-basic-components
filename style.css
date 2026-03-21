@@ -66,6 +66,22 @@ img { max-width: 100%; height: auto; display: block; }
 .t-header h1 { font-size: 1rem; font-weight: 700; }
 .t-header p  { font-size: .8125rem; color: #888; }
 
+.t-page-nav {
+  background: #111;
+  padding: .375rem var(--sp-lg);
+  display: flex;
+  gap: var(--sp-md);
+}
+.t-page-nav a {
+  font-size: .8125rem;
+  color: #aaa;
+  text-decoration: none;
+  padding: .2rem .5rem;
+  border-radius: 3px;
+}
+.t-page-nav a:hover { color: #fff; }
+.t-page-nav a[aria-current="page"] { color: #fff; font-weight: 700; }
+
 .t-nav {
   background: #fff;
   border-bottom: 1px solid #ddd;
