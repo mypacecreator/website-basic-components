@@ -254,6 +254,237 @@
     </div>
   </section>
 
+  <!-- ================================================
+       04. フォーム
+       ================================================ -->
+  <section id="forms">
+    <h2>04. フォーム</h2>
+
+    <p class="demo-label">入力フィールド各種</p>
+    <div class="demo">
+      <div class="form-field">
+        <label class="form-label" for="f-text">テキスト入力<span class="form-label-required">必須</span></label>
+        <input class="form-input" type="text" id="f-text" placeholder="例：山田 太郎">
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="f-email">メールアドレス<span class="form-label-required">必須</span></label>
+        <input class="form-input" type="email" id="f-email" placeholder="例：taro@example.com">
+        <p class="form-hint">半角英数字で入力してください</p>
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="f-tel">電話番号<span class="form-label-optional">任意</span></label>
+        <input class="form-input" type="tel" id="f-tel" placeholder="例：090-1234-5678">
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="f-select">都道府県<span class="form-label-required">必須</span></label>
+        <select class="form-select" id="f-select">
+          <option value="">選択してください</option>
+          <option>東京都</option>
+          <option>大阪府</option>
+          <option>愛知県</option>
+          <option>福岡県</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="f-textarea">お問い合わせ内容<span class="form-label-required">必須</span></label>
+        <textarea class="form-textarea" id="f-textarea" rows="4" placeholder="お問い合わせ内容をご記入ください"></textarea>
+      </div>
+    </div>
+
+    <p class="demo-label">チェックボックス・ラジオボタン</p>
+    <div class="demo">
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">ご興味のある分野（複数選択可）</legend>
+        <label class="form-check"><input type="checkbox" checked> Webデザイン</label>
+        <label class="form-check"><input type="checkbox"> グラフィックデザイン</label>
+        <label class="form-check"><input type="checkbox"> UI/UXデザイン</label>
+      </fieldset>
+      <br>
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">お問い合わせ種別</legend>
+        <label class="form-check"><input type="radio" name="inquiry" checked> 新規のご依頼</label>
+        <label class="form-check"><input type="radio" name="inquiry"> 既存案件のご相談</label>
+        <label class="form-check"><input type="radio" name="inquiry"> その他</label>
+      </fieldset>
+    </div>
+
+    <p class="demo-label">エラー・無効状態</p>
+    <div class="demo">
+      <div class="form-field">
+        <label class="form-label" for="f-error">メールアドレス<span class="form-label-required">必須</span></label>
+        <input class="form-input form-input--error" type="email" id="f-error" value="invalid-email">
+        <p class="form-error-msg">正しいメールアドレスの形式で入力してください</p>
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="f-disabled">無効フィールド</label>
+        <input class="form-input" type="text" id="f-disabled" value="編集できません" disabled>
+      </div>
+    </div>
+
+    <p class="demo-label">お問い合わせフォーム（全体例）</p>
+    <div class="demo">
+      <form>
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label" for="fc-sei">姓<span class="form-label-required">必須</span></label>
+            <input class="form-input" type="text" id="fc-sei" placeholder="山田">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="fc-mei">名<span class="form-label-required">必須</span></label>
+            <input class="form-input" type="text" id="fc-mei" placeholder="太郎">
+          </div>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="fc-email">メールアドレス<span class="form-label-required">必須</span></label>
+          <input class="form-input" type="email" id="fc-email" placeholder="taro@example.com">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="fc-company">会社名<span class="form-label-optional">任意</span></label>
+          <input class="form-input" type="text" id="fc-company" placeholder="株式会社サンプル">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="fc-message">メッセージ<span class="form-label-required">必須</span></label>
+          <textarea class="form-textarea" id="fc-message" rows="5" placeholder="お問い合わせ内容をご記入ください"></textarea>
+        </div>
+        <div class="form-field">
+          <label class="form-check"><input type="checkbox"> <a href="#">プライバシーポリシー</a>に同意する</label>
+        </div>
+        <button type="submit" class="btn btn--primary btn--md">送信する</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================================================
+       05. リスト
+       ================================================ -->
+  <section id="lists">
+    <h2>05. リスト</h2>
+
+    <p class="demo-label">箇条書き（disc）</p>
+    <div class="demo">
+      <ul class="list-disc">
+        <li>Webサイトのデザイン・コーディング</li>
+        <li>ランディングページの制作</li>
+        <li>バナー・グラフィックデザイン</li>
+        <li>CMSを使ったサイト構築（WordPress など）</li>
+      </ul>
+    </div>
+
+    <p class="demo-label">番号付きリスト</p>
+    <div class="demo">
+      <ol class="list-ordered">
+        <li>お問い合わせフォームからご連絡ください</li>
+        <li>担当者よりヒアリングシートをお送りします</li>
+        <li>ご要件をもとにお見積もりを作成します</li>
+        <li>ご承認後、制作を開始します</li>
+      </ol>
+    </div>
+
+    <p class="demo-label">チェックリスト</p>
+    <div class="demo">
+      <ul class="list-check">
+        <li>レスポンシブ対応（スマートフォン・タブレット）</li>
+        <li>SEO基本設定（メタタグ・OGP）</li>
+        <li>お問い合わせフォーム設置</li>
+        <li>Google Analytics 導入</li>
+      </ul>
+    </div>
+
+    <p class="demo-label">ボーダー区切りリスト</p>
+    <div class="demo">
+      <ul class="list-border">
+        <li>サービス概要</li>
+        <li>料金プラン</li>
+        <li>制作実績</li>
+        <li>よくあるご質問</li>
+        <li>お問い合わせ</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================================================
+       06. テーブル
+       ================================================ -->
+  <section id="tables">
+    <h2>06. テーブル</h2>
+
+    <p class="demo-label">基本テーブル</p>
+    <div class="demo">
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>プラン名</th>
+              <th>ページ数</th>
+              <th>納期の目安</th>
+              <th>価格（税込）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ライト</td>
+              <td>5ページ以内</td>
+              <td>約2週間</td>
+              <td>¥110,000〜</td>
+            </tr>
+            <tr>
+              <td>スタンダード</td>
+              <td>10ページ以内</td>
+              <td>約1ヶ月</td>
+              <td>¥220,000〜</td>
+            </tr>
+            <tr>
+              <td>プレミアム</td>
+              <td>20ページ以内</td>
+              <td>約2ヶ月</td>
+              <td>¥440,000〜</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p class="demo-label">ストライプテーブル</p>
+    <div class="demo">
+      <div class="table-wrap">
+        <table class="table table--striped">
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>ライト</th>
+              <th>スタンダード</th>
+              <th>プレミアム</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>デザイン制作</td><td>◯</td><td>◯</td><td>◯</td></tr>
+            <tr><td>コーディング</td><td>◯</td><td>◯</td><td>◯</td></tr>
+            <tr><td>CMS導入</td><td>−</td><td>◯</td><td>◯</td></tr>
+            <tr><td>SEO対策</td><td>−</td><td>基本</td><td>詳細</td></tr>
+            <tr><td>アクセス解析</td><td>−</td><td>−</td><td>◯</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p class="demo-label">縦型テーブル（左列：見出し）</p>
+    <div class="demo">
+      <div class="table-wrap">
+        <table class="table table--vertical">
+          <tbody>
+            <tr><th>会社名</th><td>株式会社サンプルデザイン</td></tr>
+            <tr><th>所在地</th><td>〒100-0001 東京都千代田区千代田1-1</td></tr>
+            <tr><th>設立</th><td>2015年4月</td></tr>
+            <tr><th>代表者</th><td>山田 太郎</td></tr>
+            <tr><th>事業内容</th><td>Webデザイン・コーディング、グラフィックデザイン、ブランディング</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- placeholder -->
+
 </main>
 
 </body>
