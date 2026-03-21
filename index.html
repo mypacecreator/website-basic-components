@@ -651,6 +651,181 @@
     </div>
   </section>
 
+  <!-- ================================================
+       10. アラート・通知
+       ================================================ -->
+  <section id="alerts">
+    <h2>10. アラート・通知</h2>
+
+    <p class="demo-label">アラート4種</p>
+    <div class="demo">
+      <div class="alert alert--info">
+        <span class="alert__icon">ℹ️</span>
+        <div class="alert__body">
+          <strong>お知らせ</strong>
+          <p>システムメンテナンスのため、2024年4月5日（金）22:00〜翌2:00はサービスを停止します。</p>
+        </div>
+      </div>
+      <div class="alert alert--success">
+        <span class="alert__icon">✅</span>
+        <div class="alert__body">
+          <strong>送信完了</strong>
+          <p>お問い合わせを受け付けました。3営業日以内にご返信いたします。</p>
+        </div>
+      </div>
+      <div class="alert alert--warning">
+        <span class="alert__icon">⚠️</span>
+        <div class="alert__body">
+          <strong>ご注意ください</strong>
+          <p>入力内容に未完了の項目があります。すべての必須項目を入力してから送信してください。</p>
+        </div>
+      </div>
+      <div class="alert alert--error">
+        <span class="alert__icon">❌</span>
+        <div class="alert__body">
+          <strong>エラーが発生しました</strong>
+          <p>送信に失敗しました。しばらく時間をおいてから再度お試しください。</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="demo-label">重要なお知らせ（左アクセントバー）</p>
+    <div class="demo">
+      <div class="alert alert--notice">
+        <span class="alert__icon">📌</span>
+        <div class="alert__body">
+          <strong>重要なお知らせ</strong>
+          <p>個人情報保護方針を改定しました。改定内容については<a href="#">こちら</a>をご確認ください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       11. アコーディオン・FAQ
+       ================================================ -->
+  <section id="accordion">
+    <h2>11. アコーディオン・FAQ</h2>
+
+    <p class="demo-label">スタンダードアコーディオン</p>
+    <div class="demo">
+      <div class="accordion">
+        <button class="accordion__trigger" aria-expanded="true" aria-controls="acc-panel-1">
+          制作期間はどれくらいかかりますか？
+          <span class="accordion__icon" aria-hidden="true">▼</span>
+        </button>
+        <div class="accordion__panel" id="acc-panel-1">
+          規模により異なりますが、5〜10ページ程度のコーポレートサイトで約1〜2ヶ月が目安です。ご要件やデザインの複雑さによって変わりますので、まずはお気軽にご相談ください。
+        </div>
+      </div>
+      <div class="accordion">
+        <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-panel-2">
+          修正は何回まで対応していただけますか？
+          <span class="accordion__icon" aria-hidden="true">▼</span>
+        </button>
+        <div class="accordion__panel" id="acc-panel-2" hidden>
+          プランにより異なりますが、スタンダードプランでは各工程2回まで修正対応しております。それ以上の修正はオプション対応（別途お見積もり）となります。
+        </div>
+      </div>
+      <div class="accordion">
+        <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-panel-3">
+          公開後のサポートはありますか？
+          <span class="accordion__icon" aria-hidden="true">▼</span>
+        </button>
+        <div class="accordion__panel" id="acc-panel-3" hidden>
+          公開後1ヶ月間は無償サポートをご提供しています。その後は月額保守契約をご締結いただくことで、継続的なサポートが可能です。
+        </div>
+      </div>
+    </div>
+
+    <p class="demo-label">FAQ スタイル（Q/A マーカー）</p>
+    <div class="demo">
+      <div class="faq">
+        <details class="faq__item">
+          <summary class="faq__q">
+            <span class="faq__marker-q">Q</span>
+            WordPressでの制作は可能ですか？
+          </summary>
+          <div class="faq__a">
+            <span class="faq__marker-a">A</span>
+            <p>はい、WordPressを使ったWebサイト制作に対応しております。オリジナルテーマの開発から、既存テーマのカスタマイズまで幅広く承っております。</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">
+            <span class="faq__marker-q">Q</span>
+            見積もりは無料ですか？
+          </summary>
+          <div class="faq__a">
+            <span class="faq__marker-a">A</span>
+            <p>はい、お見積もりは無料です。お問い合わせフォームよりご要件をお知らせください。通常3営業日以内にご連絡いたします。</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">
+            <span class="faq__marker-q">Q</span>
+            制作途中でデザインの変更はできますか？
+          </summary>
+          <div class="faq__a">
+            <span class="faq__marker-a">A</span>
+            <p>工程によっては対応可能ですが、追加費用が発生する場合があります。変更のご要望はできるだけ早い段階でお申し付けください。</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       12. タブ
+       ================================================ -->
+  <section id="tabs">
+    <h2>12. タブ</h2>
+
+    <p class="demo-label">アンダーラインタブ</p>
+    <div class="demo">
+      <div class="tabs" data-tabs>
+        <div class="tabs__nav" role="tablist">
+          <button class="tabs__btn" role="tab" aria-selected="true" aria-controls="tab1-panel1">概要</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab1-panel2">料金</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab1-panel3">よくある質問</button>
+        </div>
+        <div class="tabs__panel" id="tab1-panel1" role="tabpanel">
+          <p>サービスの概要についての説明文が入ります。事業内容や強みを分かりやすく記述し、ユーザーが求める情報に素早くアクセスできるよう整理します。</p>
+        </div>
+        <div class="tabs__panel" id="tab1-panel2" role="tabpanel" hidden>
+          <p>料金プランについての説明文が入ります。各プランの特徴と価格を明確に示し、ユーザーが自分に合ったプランを選びやすくします。</p>
+        </div>
+        <div class="tabs__panel" id="tab1-panel3" role="tabpanel" hidden>
+          <p>よくある質問と回答が入ります。ユーザーが疑問に感じやすい点をまとめ、問い合わせの手間を省きます。</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="demo-label">ピルタブ</p>
+    <div class="demo">
+      <div class="tabs tabs--pill" data-tabs>
+        <div class="tabs__nav" role="tablist">
+          <button class="tabs__btn" role="tab" aria-selected="true" aria-controls="tab2-panel1">すべて</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab2-panel2">Webデザイン</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab2-panel3">グラフィック</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab2-panel4">ブランディング</button>
+        </div>
+        <div class="tabs__panel" id="tab2-panel1" role="tabpanel">
+          <p>すべてのカテゴリの実績が表示されます。</p>
+        </div>
+        <div class="tabs__panel" id="tab2-panel2" role="tabpanel" hidden>
+          <p>Webデザインカテゴリの実績が表示されます。</p>
+        </div>
+        <div class="tabs__panel" id="tab2-panel3" role="tabpanel" hidden>
+          <p>グラフィックデザインカテゴリの実績が表示されます。</p>
+        </div>
+        <div class="tabs__panel" id="tab2-panel4" role="tabpanel" hidden>
+          <p>ブランディングカテゴリの実績が表示されます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 </body>
