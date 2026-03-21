@@ -123,6 +123,12 @@ section + section { margin-top: var(--sp-xl); }
 }
 .demo > * + * { margin-top: var(--sp-md); }
 
+/* カバー：PC・モバイル両方で全幅 */
+.demo--full-bleed-always {
+  margin-left: calc(-1 * var(--sp-lg));
+  margin-right: calc(-1 * var(--sp-lg));
+}
+
 /* 画像プレースホルダー */
 .ph {
   background: var(--wf-ph-bg);
@@ -159,6 +165,10 @@ section + section { margin-top: var(--sp-xl); }
 }
 .wf-ul li + li,
 .wf-ol li + li { margin-top: .25rem; }
+
+/* ネストリスト マーカー */
+.wf-ul ul { padding-left: 1.5rem; list-style-type: circle; }
+.wf-ul ul ul { list-style-type: square; }
 
 /* 定義リスト — インデント版（デフォルト） */
 .wf-dl dt { font-weight: 700; margin-top: var(--sp-sm); }
@@ -391,12 +401,11 @@ section + section { margin-top: var(--sp-xl); }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--sp-sm);
+  gap: var(--sp-md);
 }
 .wf-cta__microcopy {
   font-size: .875rem;
   color: var(--color-text-sub);
-  margin-top: -.25rem;
 }
 
 /* ============================================================
@@ -449,6 +458,17 @@ section + section { margin-top: var(--sp-xl); }
 @media (max-width: 640px) {
   .t-nav { padding: var(--sp-xs) var(--sp-sm); }
   .t-main { padding: var(--sp-md); }
+
+  /* CTA：モバイルのみ全幅 */
+  .demo--full-bleed {
+    margin-left: calc(-1 * var(--sp-md));
+    margin-right: calc(-1 * var(--sp-md));
+  }
+  /* カバーのPC側マージンをモバイル用に上書き */
+  .demo--full-bleed-always {
+    margin-left: calc(-1 * var(--sp-md));
+    margin-right: calc(-1 * var(--sp-md));
+  }
 
   .wf-media-text {
     grid-template-columns: 1fr;

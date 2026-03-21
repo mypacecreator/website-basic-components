@@ -82,17 +82,23 @@
     <section id="list">
       <p class="s-heading">03. リスト — List</p>
 
-      <p class="demo-label">箇条書き（unordered list）</p>
+      <p class="demo-label">箇条書き（unordered list）— 3階層ネスト</p>
       <div class="demo">
         <ul class="wf-ul">
           <li>リスト項目のテキストが入ります</li>
-          <li>リスト項目のテキストが入ります</li>
           <li>リスト項目のテキストが入ります
             <ul>
-              <li>ネストされたリスト項目</li>
-              <li>ネストされたリスト項目</li>
+              <li>ネストされた2階層目のリスト項目</li>
+              <li>ネストされた2階層目のリスト項目
+                <ul>
+                  <li>ネストされた3階層目のリスト項目</li>
+                  <li>ネストされた3階層目のリスト項目</li>
+                </ul>
+              </li>
+              <li>ネストされた2階層目のリスト項目</li>
             </ul>
           </li>
+          <li>リスト項目のテキストが入ります</li>
           <li>リスト項目のテキストが入ります</li>
         </ul>
       </div>
@@ -307,7 +313,7 @@
       <p class="s-heading">07. カバー — Cover</p>
 
       <p class="demo-label">背景画像またはカラー＋テキストオーバーレイ</p>
-      <div class="demo" style="padding:0; overflow:hidden;">
+      <div class="demo demo--full-bleed-always" style="padding:0; overflow:hidden;">
         <div class="wf-cover">
           <div class="wf-cover__inner">
             <p class="wf-cover__note">背景：画像またはカラー ／ テキスト色・余白・高さはデザイナーが設定</p>
@@ -547,7 +553,7 @@
       <p class="s-heading">14. CTA — Call to Action</p>
 
       <p class="demo-label">お問い合わせ・行動喚起エリア — 背景色・レイアウトはデザイナーが設定</p>
-      <div class="demo" style="padding:0; overflow:hidden;">
+      <div class="demo demo--full-bleed" style="padding:0; overflow:hidden;">
         <div class="wf-cta">
           <p class="wf-h2">お問い合わせはこちら</p>
           <p class="wf-p">どんなことでもお気軽にお問い合わせください。</p>
