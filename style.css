@@ -80,7 +80,7 @@ img { max-width: 100%; height: auto; display: block; }
   flex-wrap: nowrap;
   gap: 2px;
   list-style: none;
-  white-space: nowrap;
+  min-width: max-content;
 }
 .t-nav a {
   display: block;
