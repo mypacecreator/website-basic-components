@@ -545,6 +545,8 @@ section + section { margin-top: var(--sp-xl); }
   background: var(--color-bg-sub);
 }
 
+.pd-note { font-size: .75rem; color: var(--color-text-sub); margin-top: .5rem; }
+
 /* 投稿フッター（カテゴリー・タグ） */
 .pd-post-footer {
   display: flex;
