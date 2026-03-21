@@ -826,6 +826,115 @@
     </div>
   </section>
 
+  <!-- ================================================
+       13. ページヘッダー
+       ================================================ -->
+  <section id="hero">
+    <h2>13. ページヘッダー</h2>
+
+    <p class="demo-label">カラー背景（内部ページ用）</p>
+    <div class="demo" style="padding:0;overflow:hidden;">
+      <div class="page-hero">
+        <nav aria-label="パンくずリスト">
+          <ol class="breadcrumb page-hero__breadcrumb" style="color:rgba(255,255,255,.75);">
+            <li class="breadcrumb__item"><a href="#" style="color:rgba(255,255,255,.75);">ホーム</a></li>
+            <li class="breadcrumb__item"><a href="#" style="color:rgba(255,255,255,.75);">サービス</a></li>
+            <li class="breadcrumb__item" aria-current="page" style="color:#fff;">Webデザイン</li>
+          </ol>
+        </nav>
+        <h1 class="page-hero__title">Webデザイン</h1>
+        <p class="page-hero__sub">お客様のブランドを活かした、使いやすくシンプルなデザインをご提案します。</p>
+      </div>
+    </div>
+
+    <p class="demo-label">ライト背景（グレー）</p>
+    <div class="demo" style="padding:0;overflow:hidden;">
+      <div class="page-hero page-hero--light">
+        <nav aria-label="パンくずリスト">
+          <ol class="breadcrumb page-hero__breadcrumb">
+            <li class="breadcrumb__item"><a href="#">ホーム</a></li>
+            <li class="breadcrumb__item"><a href="#">会社情報</a></li>
+            <li class="breadcrumb__item" aria-current="page">会社概要</li>
+          </ol>
+        </nav>
+        <h1 class="page-hero__title">会社概要</h1>
+        <p class="page-hero__sub">Company Profile</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       14. パンくずリスト
+       ================================================ -->
+  <section id="breadcrumbs">
+    <h2>14. パンくずリスト</h2>
+
+    <p class="demo-label">基本（› 区切り）</p>
+    <div class="demo">
+      <nav aria-label="パンくずリスト">
+        <ol class="breadcrumb">
+          <li class="breadcrumb__item"><a href="#">ホーム</a></li>
+          <li class="breadcrumb__item"><a href="#">サービス</a></li>
+          <li class="breadcrumb__item"><a href="#">Webデザイン</a></li>
+          <li class="breadcrumb__item" aria-current="page">コーポレートサイト制作</li>
+        </ol>
+      </nav>
+    </div>
+
+    <p class="demo-label">ホームアイコン付き</p>
+    <div class="demo">
+      <nav aria-label="パンくずリスト">
+        <ol class="breadcrumb">
+          <li class="breadcrumb__item">
+            <a href="#" aria-label="ホーム">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" style="vertical-align:-2px"><path d="M8 1L1 7v8h5v-5h4v5h5V7z"/></svg>
+            </a>
+          </li>
+          <li class="breadcrumb__item"><a href="#">お知らせ</a></li>
+          <li class="breadcrumb__item" aria-current="page">2024年度の新サービスを開始しました</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ================================================
+       15. ページネーション
+       ================================================ -->
+  <section id="pagination">
+    <h2>15. ページネーション</h2>
+
+    <p class="demo-label">番号付きページネーション</p>
+    <div class="demo">
+      <nav aria-label="ページネーション">
+        <div class="pagination">
+          <a href="#" class="pagination__btn pagination__btn--disabled" aria-disabled="true" aria-label="前のページ">‹</a>
+          <a href="#" class="pagination__btn pagination__btn--active" aria-current="page">1</a>
+          <a href="#" class="pagination__btn">2</a>
+          <a href="#" class="pagination__btn">3</a>
+          <span class="pagination__dots">…</span>
+          <a href="#" class="pagination__btn">8</a>
+          <a href="#" class="pagination__btn">9</a>
+          <a href="#" class="pagination__btn">10</a>
+          <a href="#" class="pagination__btn" aria-label="次のページ">›</a>
+        </div>
+      </nav>
+    </div>
+
+    <p class="demo-label">前後の記事ナビ</p>
+    <div class="demo">
+      <nav class="article-pager" aria-label="前後の記事">
+        <a href="#" class="article-pager__item article-pager__item--prev">
+          <p class="article-pager__label">‹ 前の記事</p>
+          <p>WordPressのカスタム投稿タイプを活用する方法</p>
+        </a>
+        <a href="#" class="article-pager__item article-pager__item--next">
+          <p class="article-pager__label">次の記事 ›</p>
+          <p>レスポンシブデザインで気をつけるべき10のポイント</p>
+        </a>
+      </nav>
+    </div>
+  </section>
+
 </main>
 
 </body>
