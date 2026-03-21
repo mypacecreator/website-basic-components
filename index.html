@@ -483,7 +483,173 @@
     </div>
   </section>
 
-  <!-- placeholder -->
+  <!-- ================================================
+       07. カード
+       ================================================ -->
+  <section id="cards">
+    <h2>07. カード</h2>
+
+    <p class="demo-label">基本カード（3カラムグリッド）</p>
+    <div class="demo">
+      <div class="card-grid">
+        <div class="card">
+          <svg class="card__img" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="160" fill="#e9ecef"/><text x="200" y="88" text-anchor="middle" fill="#adb5bd" font-size="14" font-family="sans-serif">画像 400×160</text></svg>
+          <div class="card__body">
+            <p class="card__title">サービスタイトル A</p>
+            <p class="card__text">サービスの概要をここに記述します。2〜3行程度のテキストが入ります。</p>
+          </div>
+          <div class="card__footer">2024年4月1日</div>
+        </div>
+        <div class="card">
+          <svg class="card__img" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="160" fill="#e9ecef"/><text x="200" y="88" text-anchor="middle" fill="#adb5bd" font-size="14" font-family="sans-serif">画像 400×160</text></svg>
+          <div class="card__body">
+            <p class="card__title">サービスタイトル B</p>
+            <p class="card__text">サービスの概要をここに記述します。2〜3行程度のテキストが入ります。</p>
+          </div>
+          <div class="card__footer">2024年3月15日</div>
+        </div>
+        <div class="card">
+          <svg class="card__img" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="160" fill="#e9ecef"/><text x="200" y="88" text-anchor="middle" fill="#adb5bd" font-size="14" font-family="sans-serif">画像 400×160</text></svg>
+          <div class="card__body">
+            <p class="card__title">サービスタイトル C</p>
+            <p class="card__text">サービスの概要をここに記述します。2〜3行程度のテキストが入ります。</p>
+          </div>
+          <div class="card__footer">2024年3月1日</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="demo-label">横並びカード</p>
+    <div class="demo">
+      <div class="card card--horizontal">
+        <svg class="card__img" viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg" style="width:160px;height:auto;flex-shrink:0;"><rect width="160" height="120" fill="#e9ecef"/><text x="80" y="64" text-anchor="middle" fill="#adb5bd" font-size="12" font-family="sans-serif">画像</text></svg>
+        <div class="card__body">
+          <p class="card__title">横並びカードのタイトル</p>
+          <p class="card__text">画像と本文を横並びにしたカードパターンです。ニュース一覧や実績紹介などに適しています。テキストが長くなる場合もこのレイアウトを使います。</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="demo-label">アイコンカード</p>
+    <div class="demo">
+      <div class="card-grid">
+        <div class="card card--icon">
+          <div class="card__body">
+            <div class="card__icon">🎨</div>
+            <p class="card__title">デザイン</p>
+            <p class="card__text">ブランドイメージに合ったデザインを提案します。</p>
+          </div>
+        </div>
+        <div class="card card--icon">
+          <div class="card__body">
+            <div class="card__icon">💻</div>
+            <p class="card__title">コーディング</p>
+            <p class="card__text">モダンなHTML/CSSで高品質な実装を行います。</p>
+          </div>
+        </div>
+        <div class="card card--icon">
+          <div class="card__body">
+            <div class="card__icon">📊</div>
+            <p class="card__title">分析・改善</p>
+            <p class="card__text">データをもとに継続的な改善をサポートします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       08. お知らせ・ニュース
+       ================================================ -->
+  <section id="news">
+    <h2>08. お知らせ・ニュース</h2>
+
+    <p class="demo-label">ニュースリスト</p>
+    <div class="demo">
+      <ul class="news-list">
+        <li class="news-item">
+          <span class="news-date">2024.04.01</span>
+          <span class="badge badge--new">NEW</span>
+          <span class="badge badge--primary">お知らせ</span>
+          <span class="news-title"><a href="#">2024年度の新サービスを開始しました</a></span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2024.03.25</span>
+          <span class="badge badge--secondary">実績</span>
+          <span class="news-title"><a href="#">株式会社○○様のWebサイトをリニューアルしました</a></span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2024.03.10</span>
+          <span class="badge badge--gray">コラム</span>
+          <span class="news-title"><a href="#">デザインのトレンド2024年版を公開しました</a></span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2024.02.28</span>
+          <span class="badge badge--primary">お知らせ</span>
+          <span class="news-title"><a href="#">春季休業のご案内（3月20日〜3月24日）</a></span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2024.02.15</span>
+          <span class="badge badge--secondary">実績</span>
+          <span class="news-title"><a href="#">医療法人△△様のコーポレートサイトを制作しました</a></span>
+        </li>
+      </ul>
+      <a class="news-more" href="#">お知らせ一覧を見る →</a>
+    </div>
+  </section>
+
+  <!-- ================================================
+       09. バッジ・タグ・ラベル
+       ================================================ -->
+  <section id="badges">
+    <h2>09. バッジ・タグ・ラベル</h2>
+
+    <p class="demo-label">バッジ（filled）</p>
+    <div class="demo">
+      <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+        <span class="badge badge--primary">プライマリ</span>
+        <span class="badge badge--secondary">セカンダリ</span>
+        <span class="badge badge--accent">アクセント</span>
+        <span class="badge badge--success">成功</span>
+        <span class="badge badge--warning">注意</span>
+        <span class="badge badge--error">エラー</span>
+        <span class="badge badge--gray">グレー</span>
+      </div>
+    </div>
+
+    <p class="demo-label">バッジ（outline）</p>
+    <div class="demo">
+      <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+        <span class="badge badge--outline-primary">プライマリ</span>
+      </div>
+    </div>
+
+    <p class="demo-label">特殊ラベル</p>
+    <div class="demo">
+      <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+        <span class="badge badge--new">NEW</span>
+        <span class="badge badge--hot">HOT</span>
+        <span class="badge badge--required">必須</span>
+        <span class="badge badge--optional">任意</span>
+      </div>
+    </div>
+
+    <p class="demo-label">タグクラウド</p>
+    <div class="demo">
+      <div class="tag-cloud">
+        <a href="#" class="tag">Webデザイン</a>
+        <a href="#" class="tag">コーディング</a>
+        <a href="#" class="tag">WordPress</a>
+        <a href="#" class="tag">LP制作</a>
+        <a href="#" class="tag">ロゴデザイン</a>
+        <a href="#" class="tag">バナー制作</a>
+        <a href="#" class="tag">UI/UX</a>
+        <a href="#" class="tag">レスポンシブ</a>
+        <a href="#" class="tag">SEO</a>
+        <a href="#" class="tag">アクセシビリティ</a>
+      </div>
+    </div>
+  </section>
 
 </main>
 
