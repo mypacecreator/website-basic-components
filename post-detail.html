@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>投稿詳細ページサンプル — ウェブサイト ワイヤーフレーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="t-header">
+  <h1>ウェブサイト ワイヤーフレーム</h1>
+  <p>コンポーネントテンプレート — WordPress コアブロック準拠 / デザイン発注用</p>
+</header>
+
+<nav class="t-page-nav" aria-label="ページ一覧">
+  <a href="index.html">コンポーネント一覧</a>
+  <a href="post-detail.html" aria-current="page">投稿詳細ページサンプル</a>
+</nav>
+
+<div class="pd-page-title">
+  <h1>投稿詳細ページサンプル</h1>
+</div>
+
+<div class="t-wrap">
+  <main class="t-main">
+
+    <!-- ================================================
+         投稿タイトル（H1）
+         ================================================ -->
+    <section id="post-title">
+      <p class="wf-h1">投稿記事のタイトルが入ります。2行になることもあります</p>
+    </section>
+
+    <!-- ================================================
+         投稿メタデータ（投稿日・カテゴリー・タグ）
+         ================================================ -->
+    <section id="post-meta">
+      <div class="pd-meta">
+        <time>2024.04.01</time>
+        <a href="#" class="pd-meta__cat">カテゴリー名</a>
+        <a href="#" class="pd-meta__cat">カテゴリー2</a>
+        <a href="#" class="pd-meta__tag">タグ名</a>
+        <a href="#" class="pd-meta__tag">タグ2</a>
+        <a href="#" class="pd-meta__tag">タグ3</a>
+      </div>
+    </section>
+
+    <!-- ================================================
+         アイキャッチ画像
+         ================================================ -->
+    <section id="eyecatch">
+      <div class="ph pd-eyecatch">アイキャッチ画像</div>
+    </section>
+
+    <!-- ================================================
+         目次
+         ================================================ -->
+    <section id="toc">
+      <nav class="pd-toc" aria-label="目次">
+        <p class="pd-toc__title">目次</p>
+        <ol>
+          <li>
+            <a href="#content-h2-1">セクション見出し 1（H2）</a>
+            <ol>
+              <li><a href="#content-h3-1">小見出し（H3）</a></li>
+              <li><a href="#content-h3-2">小見出し（H3）</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#content-h2-2">セクション見出し 2（H2）</a>
+            <ol>
+              <li><a href="#content-h3-3">小見出し（H3）</a></li>
+            </ol>
+          </li>
+          <li><a href="#content-h2-3">セクション見出し 3（H2）</a></li>
+        </ol>
+      </nav>
+    </section>
+
+    <!-- ================================================
+         本文
+         ================================================ -->
+    <section id="post-content">
+      <div class="pd-content">
+        <h2 id="content-h2-1">セクション見出し 1（H2）</h2>
+        <p>本文テキストが入ります。日本語のウェブサイトでは行間1.7〜1.9を基準にすることで読みやすくなります。段落と段落の間には適切な余白を設けます。</p>
+        <p>2段落目のテキストです。本文が続く場合も、行の長さ（1行あたりの文字数）や余白によって読みやすさが大きく変わります。</p>
+
+        <h3 id="content-h3-1">小見出し（H3）</h3>
+        <p>H3 直下の本文テキストです。このあと画像が挿入されるサンプルです。テキストと画像が交互に登場するレイアウトを確認できます。</p>
+        <div class="ph" style="height:240px;">本文中の画像（フルサイズ）</div>
+        <p>画像の後に続く本文テキストです。段落間の余白はデザイナーが調整します。</p>
+
+        <h3 id="content-h3-2">小見出し（H3）</h3>
+        <p>本文テキストが入ります。ここでは H4 が続くサンプルを示します。</p>
+        <h4>さらに細かい見出し（H4）</h4>
+        <p>H4 直下の本文テキストです。詳細な説明や補足情報を記述するときに使います。</p>
+
+        <h2 id="content-h2-2">セクション見出し 2（H2）</h2>
+        <p>新しいセクションの本文テキストです。前のセクションと内容が変わったことを見出しで示します。</p>
+        <h3 id="content-h3-3">小見出し（H3）</h3>
+        <p>本文テキストが入ります。テキストと画像が組み合わさった典型的なWordPress投稿の構成例です。</p>
+        <div class="ph" style="height:200px;">本文中の画像（中サイズ）</div>
+        <p>画像説明や補足テキストが入ります。</p>
+
+        <h2 id="content-h2-3">セクション見出し 3（H2）</h2>
+        <p>まとめや結論のセクションです。記事の要点を簡潔に整理します。長文が続く場合も、見出しで適切に区切ることで読者が内容を把握しやすくなります。</p>
+        <p>最後の段落テキストです。</p>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SNSシェア
+         ================================================ -->
+    <section id="sns-share">
+      <div class="pd-sns">
+        <span class="pd-sns__label">シェアする</span>
+        <span class="pd-sns__btn">X（Twitter）</span>
+        <span class="pd-sns__btn">Facebook</span>
+        <span class="pd-sns__btn">LINE</span>
+        <span class="pd-sns__btn">はてなブックマーク</span>
+      </div>
+      <p class="pd-note">SNSアイコンはサービス公式もしくはプラグイン等で用意されているものを使用するため詳細デザインは不要です。この位置に入るという点だけ配慮お願いします。</p>
+    </section>
+
+    <!-- ================================================
+         投稿フッター（カテゴリー・タグ）
+         ================================================ -->
+    <section id="post-footer">
+      <div class="pd-post-footer">
+        <div class="pd-post-footer__row">
+          <span class="pd-post-footer__label">カテゴリー：</span>
+          <a href="#" class="pd-post-footer__cat">カテゴリー名</a>
+          <a href="#" class="pd-post-footer__cat">カテゴリー2</a>
+        </div>
+        <div class="pd-post-footer__row">
+          <span class="pd-post-footer__label">タグ：</span>
+          <a href="#" class="pd-post-footer__tag">タグ名</a>
+          <a href="#" class="pd-post-footer__tag">タグ2</a>
+          <a href="#" class="pd-post-footer__tag">タグ3</a>
+          <a href="#" class="pd-post-footer__tag">タグ4</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         投稿一覧へ戻るボタン
+         ================================================ -->
+    <section id="back-to-list">
+      <a href="#" class="wf-btn wf-btn--outline">‹ 記事一覧へ戻る</a>
+    </section>
+
+    <!-- ================================================
+         前後記事へのリンク
+         ================================================ -->
+    <section id="prev-next">
+      <nav class="pd-prev-next" aria-label="前後の記事">
+        <a href="#" class="pd-prev-next__item pd-prev-next__item--prev">
+          <span class="pd-prev-next__label">‹ 前の記事</span>
+          <span class="pd-prev-next__title">前の記事タイトルのテキストが入ります</span>
+        </a>
+        <a href="#" class="pd-prev-next__item pd-prev-next__item--next">
+          <span class="pd-prev-next__label">次の記事 ›</span>
+          <span class="pd-prev-next__title">次の記事タイトルのテキストが入ります</span>
+        </a>
+      </nav>
+    </section>
+
+    <!-- ================================================
+         この記事を書いた人（著者情報）
+         ================================================ -->
+    <section id="author">
+      <h2 class="wf-h2">この記事を書いた人</h2>
+      <div class="pd-author">
+        <div class="ph pd-author__avatar">著者</div>
+        <p class="pd-author__name">著者名</p>
+        <p class="pd-author__role">役職・肩書き</p>
+        <p class="pd-author__bio">著者の自己紹介テキストが入ります。どのような人物か、専門分野や経験を簡潔に説明します。読者が信頼を持てるような内容にします。</p>
+        <p class="pd-author__link">🔗 https://twitter.com/xxxxx</p>
+        <div class="pd-author__btn">
+          <a href="#" class="wf-btn wf-btn--outline">記事一覧へ</a>
+        </div>
+      </div>
+      <p class="pd-note">著者表示は使用するプラグイン等の出力に準拠するため、細かい要素の変更が原則不可となります。背景色、文字色等の基本的なトンマナのみ指定をお願いします。</p>
+    </section>
+
+    <!-- ================================================
+         関連記事（4カラム → 2カラム）
+         ================================================ -->
+    <section id="related-posts">
+      <div class="pd-related-grid">
+        <div class="wf-card">
+          <div class="ph" style="height:140px;">サムネイル画像</div>
+          <div class="wf-card__body">
+            <p class="wf-card__title">関連記事タイトルのテキストが入ります</p>
+            <p class="wf-card__excerpt">記事の説明テキストが入ります。2〜3行程度が目安です。</p>
+          </div>
+        </div>
+        <div class="wf-card">
+          <div class="ph" style="height:140px;">サムネイル画像</div>
+          <div class="wf-card__body">
+            <p class="wf-card__title">関連記事タイトルのテキストが入ります</p>
+            <p class="wf-card__excerpt">記事の説明テキストが入ります。2〜3行程度が目安です。</p>
+          </div>
+        </div>
+        <div class="wf-card">
+          <div class="ph" style="height:140px;">サムネイル画像</div>
+          <div class="wf-card__body">
+            <p class="wf-card__title">関連記事タイトルのテキストが入ります</p>
+            <p class="wf-card__excerpt">記事の説明テキストが入ります。2〜3行程度が目安です。</p>
+          </div>
+        </div>
+        <div class="wf-card">
+          <div class="ph" style="height:140px;">サムネイル画像</div>
+          <div class="wf-card__body">
+            <p class="wf-card__title">関連記事タイトルのテキストが入ります</p>
+            <p class="wf-card__excerpt">記事の説明テキストが入ります。2〜3行程度が目安です。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CTAブロック
+         ================================================ -->
+    <section id="cta">
+      <div class="wf-cta">
+        <p class="wf-h2">お問い合わせはこちら</p>
+        <p class="wf-p">どんなことでもお気軽にお問い合わせください。</p>
+        <p class="wf-cta__microcopy">見積・相談無料</p>
+        <a href="#" class="wf-btn wf-btn--fill">問い合わせる</a>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>
